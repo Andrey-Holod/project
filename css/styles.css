@@ -1,0 +1,124 @@
+body{
+    font-family: 'roboto','sans-serif','Raleway','sans-serif';
+    color:#757575;
+    font-weight: 400;
+}
+.menu-link{
+    font-weight: 500;
+    color: #212121;
+    text-decoration: none;
+    line-height: 1.17;
+}
+.menu-link:hover{
+    color: #2196F3;
+}
+.menu-link:focus{
+    color: #2196F3;
+}
+.contact-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #757575;
+    line-height: 1.17;
+}
+.contact-link:hover{
+    color: #2196F3;
+}
+.contact-link:focus{
+    color: #2196F3;
+}
+header{
+    background-color: #fff;
+}
+.main-section{
+    background-color: #2F303A;
+}
+.team{
+    background-color: #F5F4FA;
+}
+footer{
+    background-color: #2F303A;
+}
+.footer-contact{
+    font-style: normal;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover{
+    color: #2196F3;
+}
+.footer-contact:focus{
+    color: #2196F3;
+}
+.address{
+    font-style: normal;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.address:hover{
+    color: #2196F3;
+}
+.address:focus{
+    color: #2196F3;
+}
+.main-title{
+    font-weight: 900;
+    font-size: 44px;
+    color: #fff;
+    line-height: 1,37;
+}
+.button{
+    font-weight: 700px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.9;
+}
+.main-motto{
+    font-weight: 700;
+    line-height: 1,18;
+    color: #212121;
+}
+.paragraph{
+line-height: 1,7;
+}
+.lessons{
+    font-weight: 700;
+    line-height: 1,17;
+    color: #212121;
+}
+.name{
+    font-weight: 500;
+    line-height: 1.17;
+    color: #212121;
+}
+.post{
+    line-height: 1.17;
+}
+.button-list{
+    color: #212121;
+    font-weight: 500;
+    line-height: 1,6;
+    background-color: #F5F4FA;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-list:hover{
+    color: #fff;
+    background-color: #2196F3;
+}
+.button-list:focus{
+    color: #fff;
+    background-color: #2196F3;
+}
+.list-portfolio{
+    font-weight: 700;
+    color: #212121;
+    line-height: 2;
+}
+.title-portfolio{
+    line-height: 1.87;
+    color: #757575;
+}
