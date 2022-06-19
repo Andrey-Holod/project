@@ -1,13 +1,18 @@
 body{
-    font-family: 'roboto','sans-serif','Raleway','sans-serif';
+    font-family: 'roboto',sans-serif;
     color:#757575;
     font-weight: 400;
 }
+ul{
+    list-style-type: none;
+}
 .menu-link{
+    letter-spacing: 0.28px;
     font-weight: 500;
     color: #212121;
     text-decoration: none;
-    line-height: 1.17;
+    line-height: 1.14;
+    font-size: 14px;
 }
 .menu-link:hover{
     color: #2196F3;
@@ -16,10 +21,12 @@ body{
     color: #2196F3;
 }
 .contact-link{
+    letter-spacing: 0.28px;
     text-decoration: none;
     font-weight: 500;
     color: #757575;
-    line-height: 1.17;
+    line-height: 1.14;
+    font-size: 14px;
 }
 .contact-link:hover{
     color: #2196F3;
@@ -40,6 +47,9 @@ footer{
     background-color: #2F303A;
 }
 .footer-contact{
+    letter-spacing: 0.42px;
+    line-height: 1.71;
+    font-size: 14px;
     font-style: normal;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
@@ -55,6 +65,8 @@ footer{
     text-decoration: none;
     color: #fff;
     font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42;
 }
 .address:hover{
     color: #2196F3;
@@ -63,47 +75,63 @@ footer{
     color: #2196F3;
 }
 .main-title{
+    letter-spacing: 2.64px;
     font-weight: 900;
     font-size: 44px;
     color: #fff;
-    line-height: 1,37;
+    line-height: 1,14;
 }
 .button{
-    font-weight: 700px;
+
+    font-weight: 700;
     background-color: #2196F3;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
     line-height: 1.9;
+    letter-spacing: 2.64px
 }
 .main-motto{
+    font-family:'roboto';
     font-weight: 700;
-    line-height: 1,18;
+    line-height: 1.14;
     color: #212121;
+    font-size: 14;
+    letter-spacing: 0.42px;
 }
 .paragraph{
-line-height: 1,7;
+line-height: 1.71;
+font-size: 14px;
+letter-spacing: 0.42px;
 }
 .lessons{
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1,17;
+    line-height: 1.17;
     color: #212121;
+    letter-spacing: 1.08px;
 }
 .name{
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.17;
     color: #212121;
+    letter-spacing: 0.48px;
 }
 .post{
+    font-size: 16px;
     line-height: 1.17;
+    letter-spacing: 0.48px;
 }
 .button-list{
+    letter-spacing: 0.48px;
     color: #212121;
     font-weight: 500;
-    line-height: 1,6;
+    line-height: 1.62;
     background-color: #F5F4FA;
     cursor: pointer;
     font-size: 16px;
+    font-family: 'Roboto' , sans-serif;
 }
 .button-list:hover{
     color: #fff;
@@ -114,11 +142,15 @@ line-height: 1,7;
     background-color: #2196F3;
 }
 .list-portfolio{
+    letter-spacing: 1.08px;
+    font-size: 18px;
     font-weight: 700;
     color: #212121;
     line-height: 2;
 }
 .title-portfolio{
+    letter-spacing: 0.48px;
+    font-size: 16px;
     line-height: 1.87;
     color: #757575;
 }
