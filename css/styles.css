@@ -7,7 +7,7 @@ ul{
     list-style-type: none;
 }
 .menu-link{
-    letter-spacing: 0.28px;
+    letter-spacing: 0.0175rem;
     font-weight: 500;
     color: #212121;
     text-decoration: none;
@@ -21,7 +21,7 @@ ul{
     color: #2196F3;
 }
 .contact-link{
-    letter-spacing: 0.28px;
+    letter-spacing: 0.0175rem;
     text-decoration: none;
     font-weight: 500;
     color: #757575;
@@ -47,7 +47,7 @@ footer{
     background-color: #2F303A;
 }
 .footer-contact{
-    letter-spacing: 0.42px;
+    letter-spacing: 0.0262rem;
     line-height: 1.71;
     font-size: 14px;
     font-style: normal;
@@ -66,7 +66,7 @@ footer{
     color: #fff;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.42;
+    letter-spacing: 0.0262rem;
 }
 .address:hover{
     color: #2196F3;
@@ -75,11 +75,11 @@ footer{
     color: #2196F3;
 }
 .main-title{
-    letter-spacing: 2.64px;
+    letter-spacing: 0.0165rem;
     font-weight: 900;
     font-size: 44px;
     color: #fff;
-    line-height: 1,14;
+    line-height: 1.14;
 }
 .button{
 
@@ -89,42 +89,42 @@ footer{
     cursor: pointer;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 2.64px
+    letter-spacing: 0.0165rem
 }
 .main-motto{
     font-family:'roboto';
     font-weight: 700;
     line-height: 1.14;
     color: #212121;
-    font-size: 14;
-    letter-spacing: 0.42px;
+    font-size: 14px;
+    letter-spacing: 0.0262rem;
 }
 .paragraph{
 line-height: 1.71;
 font-size: 14px;
-letter-spacing: 0.42px;
+letter-spacing: 0.0262rem;
 }
 .lessons{
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
     color: #212121;
-    letter-spacing: 1.08px;
+    letter-spacing: 0.0675rem;
 }
 .name{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.17;
     color: #212121;
-    letter-spacing: 0.48px;
+    letter-spacing:0.03rem;
 }
 .post{
     font-size: 16px;
     line-height: 1.17;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.03rem;
 }
 .button-list{
-    letter-spacing: 0.48px;
+    letter-spacing: 0.03rem;
     color: #212121;
     font-weight: 500;
     line-height: 1.62;
@@ -142,15 +142,40 @@ letter-spacing: 0.42px;
     background-color: #2196F3;
 }
 .list-portfolio{
-    letter-spacing: 1.08px;
+    letter-spacing: 0.0675rem;
     font-size: 18px;
     font-weight: 700;
     color: #212121;
     line-height: 2;
 }
 .title-portfolio{
-    letter-spacing: 0.48px;
+    letter-spacing: 0.03rem;
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
+}
+.logo{
+    color: #2196F3;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.0488rem;
+}
+.studio{
+    color: #000;
+}
+.footer-logo{
+    background-color: #2F303A;
+    color: #2196F3;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.0488rem;
+}
+.footer-studio{
+    color: #fff;
 }
