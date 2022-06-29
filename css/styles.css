@@ -50,6 +50,10 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
+footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 /*hedder*/
 .logo{
     color: #2196F3;
@@ -92,7 +96,7 @@ a{
 }
 .nav-container{
     display: flex;
-    margin: 0 auto;
+    margin-left: auto;
 }
 .nav-contact{
    
@@ -115,15 +119,15 @@ a{
     color: #2196F3;
 }
 /*main-section1*/
-.main-title-container{
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+.main-title-container{   
     flex-direction: column;
     align-items: center;
     display: flex;
 }
 .main-section{  
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #2F303A;
 }
 .main-title{
@@ -149,9 +153,12 @@ a{
     letter-spacing: 0.0165rem
 }
 /*main-section2*/
-.motto-container{
+.motto-section{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.motto-container{
+ 
 }
 .motto{
     justify-content: center;
@@ -179,8 +186,16 @@ a{
     letter-spacing: 0.0262rem;
     }
 /*main-section3*/
+.lessons-section{
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
 .lessons-container{
-    padding-bottom: 93px;
+
 }
 .lessons-title{
         margin: 0 auto;
@@ -192,11 +207,12 @@ a{
         letter-spacing: 0.0675rem;
     }
 .lessons-list-photto{
+    margin-top: 50px;
     display: flex;
 }    
 .lessons-list{
-    padding-top: 50px;
-    padding-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 /*main-section4*/
 .lessons{
@@ -210,14 +226,15 @@ a{
     letter-spacing: 0.0675rem;
 }
 .person-container{
-    padding-top: 94px;
+   
 }
 .person{
-    padding-bottom: 94px;
     display: flex;
     justify-content: center;
 }
 .team{
+    padding-bottom: 94px;
+    padding-top: 94px;
     background-color: #F5F4FA;
 }
 .person-list{
@@ -242,10 +259,13 @@ a{
     line-height: 1.17;
     letter-spacing: 0.03rem;
 }
+.person-name-post{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 /*footer*/
 .footer-container{
-   margin-top: 60px;
-   margin-left: 215px;
+
 }
 .footer-logo{
     background-color: #2F303A;
@@ -299,15 +319,15 @@ a{
 }
 /*main-portfolio*/
 .portfolio-container{
-    padding-top: 94px;
 }
 .section-portfolio{
-   
+padding-top: 94px;
+padding-bottom: 94px;
 }
 .button-potfolio{
+    margin-bottom: 34px;
     box-sizing: content-box;
     height: 54px;
-    padding-bottom: 34px;
     display: flex;
     justify-content: center;
    
@@ -339,25 +359,27 @@ a{
     background-color: #2196F3;
 }
 .list-photo-portfolio{
+
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 .list-foto-container{
-    width: 1170px;
-    height: 1360px;
+ 
 }
 .list{
-    padding-bottom: 30px;
+ margin-right: 30px;
+ margin-bottom: 30px;
 }
 .photto{
-    padding-right: 30px;
+   
 }
 .list-portfolio-container{
-    padding-left: 24px;
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
+border:1px solid #eee ;
+padding-left: 24px;
+padding-top: 20px;
+padding-right: 24px;
+padding-bottom: 20px;
 }
 .list-portfolio{
     letter-spacing: 0.0675rem;
@@ -373,8 +395,7 @@ a{
     color: #757575;
 }
 .container{
-    padding-left: 15px;
-    padding-right: 15px;
+   
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
