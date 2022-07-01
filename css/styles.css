@@ -41,7 +41,7 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+	margin: 0;
 }
 html {
 	box-sizing: border-box;
@@ -81,7 +81,7 @@ footer{
     display: inline-block;
 }
 .menu-link{
-    letter-spacing: 0.0175rem;
+    letter-spacing: 0.0175em;
     font-weight: 500;
     color: #212121;
     text-decoration: none;
@@ -105,7 +105,7 @@ footer{
 .contact-link{
     padding-left: 25px;
     padding-right: 25px;
-    letter-spacing: 0.0175rem;
+    letter-spacing: 0.0175em;
     text-decoration: none;
     font-weight: 500;
     color: #757575;
@@ -134,13 +134,14 @@ footer{
     max-width: 696px;
     max-height: 120px;
     text-align: center;
-    letter-spacing: 0.165rem;
+    letter-spacing: 0.165em;
     font-weight: 900;
     font-size: 44px;
     color: #fff;
     line-height: 1.36;
 }
 .button{
+    margin-top: 30px;
     box-sizing: border-box;
     width: 200px;
     height: 50px;
@@ -150,7 +151,7 @@ footer{
     cursor: pointer;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.0165rem
+    letter-spacing: 0.0165em
 }
 /*main-section2*/
 .motto-section{
@@ -161,38 +162,31 @@ footer{
  
 }
 .motto{
-    justify-content: center;
-    max-width: 1170px;
     display: flex;
 }
 .motto-list{
+    margin-right: 30px;
     display: block;
-    width: 270px;
-    height: 101px;
 }
 .main-motto{
+    margin-bottom: 10px;
     font-family:'roboto';
     font-weight: 700;
     line-height: 1.14;
     color: #212121;
     font-size: 14px;
-    letter-spacing: 0.0262rem;
+    letter-spacing: 0.0262em;
 }
 .paragraph{
     width: 270px;
     height: 75px;
     line-height: 1.71;
     font-size: 14px;
-    letter-spacing: 0.0262rem;
+    letter-spacing: 0.0262em;
     }
 /*main-section3*/
 .lessons-section{
     padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
 }
 .lessons-container{
 
@@ -223,7 +217,7 @@ footer{
     font-weight: 700;
     line-height: 1.17;
     color: #212121;
-    letter-spacing: 0.0675rem;
+    letter-spacing: 0.0675em;
 }
 .person-container{
    
@@ -250,18 +244,17 @@ footer{
     font-weight: 500;
     line-height: 1.17;
     color: #212121;
-    letter-spacing:0.03rem;
+    letter-spacing:0.03em;
 }
 .post{
     padding-top: 10px;
     text-align: center;
     font-size: 16px;
     line-height: 1.17;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.03em;
 }
 .person-name-post{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    
 }
 /*footer*/
 .footer-container{
@@ -275,18 +268,18 @@ footer{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
-    letter-spacing: 0.0488rem;
+    letter-spacing: 0.0488em;
 }
 .footer-studio{
     color: #fff;
 }
 .addres-list{
-    padding-top: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
 .addres-list-item{
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 .address{
     font-style: normal;
@@ -294,10 +287,10 @@ footer{
     color: #fff;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.0262rem;
+    letter-spacing: 0.0262em;
 }
 .footer-contact{
-    letter-spacing: 0.0262rem;
+    letter-spacing: 0.0262em;
     line-height: 1.71;
     font-size: 14px;
     font-style: normal;
@@ -325,9 +318,8 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 .button-potfolio{
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     box-sizing: content-box;
-    height: 54px;
     display: flex;
     justify-content: center;
    
@@ -341,7 +333,7 @@ padding-bottom: 94px;
     padding-right: 22px;
     padding-top: 6px;
     padding-bottom: 6px;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.03em;
     color: #212121;
     font-weight: 500;
     line-height: 1.62;
@@ -359,13 +351,13 @@ padding-bottom: 94px;
     background-color: #2196F3;
 }
 .list-photo-portfolio{
-
+    box-sizing: unset;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 .list-foto-container{
- 
+ width: 1200px;
 }
 .list{
  margin-right: 30px;
@@ -382,20 +374,21 @@ padding-right: 24px;
 padding-bottom: 20px;
 }
 .list-portfolio{
-    letter-spacing: 0.0675rem;
+    letter-spacing: 0.0675em;
     font-size: 18px;
     font-weight: 700;
     color: #212121;
     line-height: 2;
 }
 .title-portfolio{
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.03em;
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
 }
 .container{
-   
+   padding-left: 15px;
+   padding-right: 15px;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
