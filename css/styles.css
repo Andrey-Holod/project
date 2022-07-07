@@ -16,6 +16,8 @@ ul{
 	box-sizing: inherit;
 }
 li{
+    padding: 0;
+    margin: 0;
     display: inline;
 }
 header{
@@ -99,24 +101,37 @@ footer{
     margin-left: auto;
 }
 .nav-contact{
-   
-
+    display: flex;
 }  
 .contact-link{
-    padding-left: 25px;
-    padding-right: 25px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 50px;
     letter-spacing: 0.0175em;
     text-decoration: none;
     font-weight: 500;
     color: #757575;
     line-height: 1.14;
     font-size: 14px;
+    display: flex;
 }
 .contact-link:hover{
     color: #2196F3;
 }
 .contact-link:focus{
     color: #2196F3;
+}
+.icon-hedder{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.icon-hedder-phone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 /*main-section1*/
 .main-title-container{   
@@ -125,10 +140,20 @@ footer{
     display: flex;
 }
 .main-section{  
-    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 600px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right ,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/image_main-section-2.jpg);
     background-color: #2F303A;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .main-title{
     max-width: 696px;
@@ -141,6 +166,8 @@ footer{
     line-height: 1.36;
 }
 .button{
+    border: 0px;
+    border-radius: 4px;
     margin-top: 30px;
     box-sizing: border-box;
     width: 200px;
@@ -152,6 +179,14 @@ footer{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.0165em
+}
+.button:hover{
+    color: #fff;
+    background-color: #188CE8;
+}
+.button:focus{
+    color: #fff;
+    background-color: #188CE8;
 }
 /*main-section2*/
 .motto-section{
@@ -167,6 +202,52 @@ footer{
 .motto-list{
     margin-right: 30px;
     display: block;
+}
+.motto-list::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/antenna\ 1sputnik.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+.motto-list:nth-child(1)::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/antenna\ 1sputnik.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+.motto-list:nth-child(2)::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/clock\ 1clok.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+.motto-list:nth-child(3)::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/diagram\ 1computer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+.motto-list:nth-child(4)::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background-image: url(../images/astronaut\ 1kosmodesant.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
 }
 .main-motto{
     margin-bottom: 10px;
@@ -227,6 +308,8 @@ footer{
     background-color: #F5F4FA;
 }
 .person-list{
+    width: 270px;
+    max-height: 428px;
     padding-right: 30px;
 }
 .person-list-photto{
@@ -250,9 +333,85 @@ footer{
 .person-name-post{
     margin-top: 30px;
 }
+.actions{
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    width: 206px;
+    height: 44px;
+}
+.button-icon{
+    color: #afb1b8;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    height: 44px;
+    width: 44px;
+    margin-right: 10px;
+}
+.button-icon:hover{
+    color: #fff;
+    background-color: #2196F3;
+    fill: #fff;
+}
+.icon{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+.icon:hover{
+    fill: currentColor;
+}
+.icon-container{
+margin-top: 16px;
+padding-bottom: 30px;
+}
+/*main-section5*/
+.client-title{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: #212121;
+    letter-spacing: 0.0675rem;
+    margin-bottom: 50px;
+}
+.client{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-icon-button{
+    display: flex;
+}
+.client-button{
+    cursor: pointer;
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4%;
+    background-color: #fff;
+    color: #afb1b8;
+}
+.client-button:hover{
+    color: #2196F3;
+    border: 1px solid #2196F3;
+}
+.client-icon{
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+.client-icon:hover{
+    fill: currentColor;
+}
+
 /*footer*/
 .footer-container{
-
+display: flex;
 }
 .footer-logo{
     background-color: #2F303A;
@@ -304,6 +463,43 @@ footer{
 .address:focus{
     color: #2196F3;
 }
+.fotter-icon-container{
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 12px;
+}
+.fotter-icon-title{
+    font-family:'roboto';
+    font-weight: 700;
+    line-height: 1.14;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.0262em;
+}
+.footer-icon-list{
+
+    margin-top: 20px;
+    display: flex;
+}
+.footer-button-icon{
+    color: #fff;
+    background-color:  rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.footer-button-icon:hover{
+    background-color: #2196F3;
+}
+.footer-icon{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
 /*main-portfolio*/
 .portfolio-container{
 }
@@ -322,6 +518,7 @@ padding-bottom: 94px;
     padding-right: 8px;
 }
 .button-list{
+    border: none;
     border-radius: 4%;
     padding-left: 22px;
     padding-right: 22px;
@@ -337,6 +534,7 @@ padding-bottom: 94px;
     font-family: 'Roboto' , sans-serif;
 }
 .button-list:hover{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: #fff;
     background-color: #2196F3;
 }
@@ -358,6 +556,9 @@ padding-bottom: 94px;
  margin-right: 30px;
  margin-bottom: 30px;
 }
+.list:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .photto{
    
 }
@@ -371,6 +572,9 @@ padding-bottom: 20px;
 .list-bottom{
     margin-right: 30px;
     margin-bottom: -0 auto;
+}
+.list-bottom:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list-portfolio{
     letter-spacing: 0.0675em;
@@ -401,3 +605,13 @@ padding-bottom: 20px;
 .lessons-container{
     width: 1200px;
 }
+.person-list-container{
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+}
+
+
+
+
