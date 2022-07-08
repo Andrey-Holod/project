@@ -307,9 +307,9 @@ footer{
     background-color: #F5F4FA;
 }
 .person-list{
-    
+    margin-right: 15px;
+    margin-left: 15px;
     max-height: 428px;
-    margin-right: 30px;
 }
 .person-list-container{
     width: 270px;
