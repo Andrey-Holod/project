@@ -21,7 +21,7 @@
         <nav>
         <div class="site-nav-container">   
             <ul class="site-nav">
-                <li class="menu-item"><a class="menu-link" href="./index.html">Студия</a> </li>
+                <li class="menu-item "><a class="menu-link" href="./index.html">Студия</a> </li>
                 <li class="menu-item"><a class="menu-link" href="./portfolio.html">Портфолио</a> </li>
                 <li class="menu-item"><a class="menu-link" href="">Контакты</a> </li>
             </ul>
@@ -52,7 +52,7 @@
         <div class="container">
             <div class="main-title-container">
             <h1 class="main-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="button"> 
+            <button type="button" class="button" data-modal-open> 
             Заказать услугу
              </button>
             </div>
@@ -89,9 +89,21 @@
         <h2 class="lessons-title">Чем мы занимаемся</h2>
         <div class="lessons-container">
         <ul class="lessons-list-photto">
-            <li class="lessons-list"><img width="370" src="./images/img-4.jpg" alt="человек печатает"> </li>
-            <li class="lessons-list"><img width="370" src="./images/img-6.jpg" alt="смотрит в телефон"></li>
-            <li class="lessons-list"><img width="370" src="./images/img-5.jpg" alt="смотрит на картинку"></li>
+            <li class="lessons-list"><img width="370" src="./images/img-4.jpg" alt="человек печатает"> 
+                <div class="lessons-list-container">
+                    <h3 class="lessons-list-title">ДЕСКТОПНІ ДОДАТКИ</h3>
+                </div>
+            </li>
+            <li class="lessons-list"><img width="370" src="./images/img-6.jpg" alt="смотрит в телефон">
+                <div class="lessons-list-container">
+                    <h3 class="lessons-list-title">МОБІЛЬНІ ДОДАТКИ</h3>
+                </div>
+            </li>
+            <li class="lessons-list"><img width="370" src="./images/img-5.jpg" alt="смотрит на картинку">
+                <div class="lessons-list-container">
+                    <h3 class="lessons-list-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
+                </div>
+            </li>
         </ul>
         </div>
     </div>
@@ -376,5 +388,15 @@
     </div>
     </div>
    </footer>
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-close" data-modal-close>
+            <svg class="closse-icon">
+                <use href='./images/symbol-defs.svg#icon-close'> </use>
+            </svg>
+        </button>
+    </div>
+   </div>
+   <script src="./js/modal.js"></script>
 </body>
 </html>
