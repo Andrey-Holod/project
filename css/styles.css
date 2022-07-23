@@ -105,7 +105,7 @@ footer{
 }
 .icon-studio::after {
     position: absolute;
-    bottom: -32px;
+    bottom: -33px;
     content: '';
     display: block;
     background-color: #2196F3;
