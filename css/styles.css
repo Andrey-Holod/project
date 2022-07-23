@@ -103,14 +103,15 @@ footer{
 .menu-link:focus{
     color: #2196F3;
 }
-.menu-item:nth-child(1)::after{
+.icon-studio::after {
     position: absolute;
     bottom: -32px;
     content: '';
     display: block;
-    background-image: url(../images/hover.svg);
-    width: 48px;
+    background-color: #2196F3;
+    width: 100%;
     height: 4px;
+    border-radius: 2px;
 }
 .menu-item-portfolio{
     position: relative;
@@ -118,15 +119,7 @@ footer{
     padding-right: 25px;
     display: inline-block;
 }
-.menu-item-portfolio:nth-child(2)::after{
-    position: absolute;
-    bottom: -32px;
-    content: '';
-    display: block;
-    background-image: url(../images/hoverportfolio.svg);
-    width: 78px;
-    height: 4px;
-}
+
 .nav-container{
     display: flex;
     margin-left: auto;
