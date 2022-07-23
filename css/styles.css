@@ -673,6 +673,7 @@ padding-bottom: 94px;
 }
 .product-container{
     position: relative;
+    overflow: hidden;
 }
 .product-container::before{
     display: inline-block;
