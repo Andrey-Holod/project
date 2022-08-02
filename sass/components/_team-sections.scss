@@ -1,0 +1,105 @@
+  .team-section{
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background-color: #F5F4FA;
+  }
+  
+  .team-section__title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: #212121;
+    letter-spacing: 0.0675em;
+  }
+  
+  .team-section__list{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team-section__item{
+    margin-right: 15px;
+    margin-left: 15px;
+    max-height: 428px;
+  }
+  
+  .person-item-container{
+    width: 270px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .person-container{
+    margin-top: 30px;
+  }
+  
+  .person-container__title{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
+    color: #212121;
+    letter-spacing: 0.03em;
+  }
+  
+  .person-container__post{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  
+  .icon-container {
+    padding-bottom: 30px;
+    margin-top: 16px;
+  }
+  
+  .icon-container__actions{
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    width: 206px;
+    height: 44px;
+  }
+  
+  .icon-container__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: #fff;
+      background-color: #2196F3;
+    }
+    &:focus {
+      color: #fff;
+      background-color: #2196F3;
+    }
+  }
+  
+  .icon-container__icon{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: currentColor;
+    }
+    &:focus {
+      fill: currentColor;
+    }
+  }
+  

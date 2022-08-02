@@ -10,39 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="menu-flex">
-            <a class="logo" href="./index.html">Web<span class="studio">Studio </span> 
+            <div class="header__inner">
+            <a class="header__logo" href="./index.html">Web<span class="header__studio">Studio </span> 
             </a>
         <nav>
-        <div class="site-nav-container">   
-            <ul class="site-nav">
-                <li class="menu-item"><a class="menu-link" href="./index.html">Студия</a> </li>
-                <li class="menu-item"><a class="menu-link icon-studio" href="./portfolio.html">Портфолио</a> </li>
-                <li class="menu-item"><a class="menu-link" href="">Контакты</a> </li>
+        <div class="header__nav">   
+            <ul class="header__list-nav">
+                <li class="header__menu-item"><a class="header__link" href="./index.html">Студия</a> </li>
+                <li class="header__menu-item"><a class="header__link header__link--active" href="./portfolio.html">Портфолио</a> </li>
+                <li class="header__menu-item"><a class="header__link" href="">Контакты</a> </li>
             </ul>
         </div>
        </nav>
-        <div class="nav-container">
-        <ul class="nav-contact"> 
+        <ul class="header__adress-list"> 
             <li>
-                <a class="contact-link" href="mailto:info@devstudio.com">
-                    <svg class="icon-hedder">
+                <a class="header__adress-link" href="mailto:info@devstudio.com">
+                    <svg class="adress-link__icon-mail">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com</a>
             </li>
-            <li><a class="contact-link" href="tel:+380961111111">
-                <svg class="icon-hedder-phone">
+            <li><a class="header__adress-link" href="tel:+380961111111">
+                <svg class="adress-link__icon-phone">
                     <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a></li>
         </ul>
-        </div>
           </div>
     </div>
     </header>
@@ -50,79 +48,79 @@
             <section class="section-portfolio">
                 <div class="container">
                     <div class="portfolio-container">
-                <ul class="button-potfolio">
-                    <li class="button-portfolio-list"><button type="button" class="button-list">Все</button></li>
-                    <li class="button-portfolio-list"><button type="button" class="button-list">Веб-сайты</button></li>
-                    <li class="button-portfolio-list"><button type="button" class="button-list">Приложения</button></li>
-                    <li class="button-portfolio-list"><button type="button" class="button-list">Дизайн</button></li>
-                    <li class="button-portfolio-list"><button type="button" class="button-list">Маркетинг</button></li>
+                <ul class="button-list">
+                    <li class="button-list__item"><button type="button" class="button-list__button">Все</button></li>
+                    <li class="button-list__item"><button type="button" class="button-list__button">Веб-сайты</button></li>
+                    <li class="button-list__item"><button type="button" class="button-list__button">Приложения</button></li>
+                    <li class="button-list__item"><button type="button" class="button-list__button">Дизайн</button></li>
+                    <li class="button-list__item"><button type="button" class="button-list__button">Маркетинг</button></li>
                 </ul>
-                <div class="list-foto-container">
-                <ul class="list-photo-portfolio">
-                    <li class="list">
-                        <div class="product-container">
-                        <img class="photto" width="370" src="./images-portfolio/img.jpg" alt="Технокряк">
-                         <p class="product-actions">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="flat-section">
+                <ul class="flat-section__list">
+                    <li class="flat-section__item">
+                        <div class="flat-container">
+                        <img  width="370" src="./images-portfolio/img.jpg" alt="Технокряк">
+                         <p class="flat-container__actions">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Технокряк</h2>
-                        <p class="title-portfolio">Веб-сайт</p>
-                        </div>
-                    </li>
-                    <li class="list">
-                        <img class="photto" width="370" src="./images-portfolio/img-2.jpg" alt="Постер New Orlean vs Golden Star">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Постер New Orlean vs Golden Star</h2>
-                        <p class="title-portfolio">Дизайн</p>
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Технокряк</h2>
+                        <p>Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="list">
-                        <img class="photto" width="370" src="./images-portfolio/img-3.jpg" alt="Ресторан Seafood">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Ресторан Seafood</h2>
-                        <p class="title-portfolio">Приложение</p>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-2.jpg" alt="Постер New Orlean vs Golden Star">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Постер New Orlean vs Golden Star</h2>
+                        <p>Дизайн</p>
                         </div>
                     </li>
-                    <li class="list">
-                        <img class="photto" width="370" src="./images-portfolio/img-4.jpg" alt="Проект Prime">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Проект Prime</h2>
-                        <p class="title-portfolio">Маркетинг</p>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-3.jpg" alt="Ресторан Seafood">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Ресторан Seafood</h2>
+                        <p>Приложение</p>
                         </div>
                     </li>
-                    <li class="list">
-                        <img class="photto" width="370" src="./images-portfolio/img-5.jpg" alt="Проект Boxes">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Проект Boxes</h2>
-                        <p class="title-portfolio">Приложение</p>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-4.jpg" alt="Проект Prime">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Проект Prime</h2>
+                        <p>Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-5.jpg" alt="Проект Boxes">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Проект Boxes</h2>
+                        <p>Приложение</p>
                         </div>  
                     </li>
-                    <li class="list">
-                        <img class="photto" width="370" src="./images-portfolio/img-6.jpg" alt="Inspiration has no Borders">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Inspiration has no Borders</h2>
-                        <p class="title-portfolio">Веб-сайт</p>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-6.jpg" alt="Inspiration has no Borders">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Inspiration has no Borders</h2>
+                        <p>Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="list-bottom">
-                        <img class="photto" width="370" src="./images-portfolio/img-7.jpg" alt="Издание Limited Edition">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Издание Limited Edition</h2>
-                        <p class="title-portfolio">Дизайн</p>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-7.jpg" alt="Издание Limited Edition">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Издание Limited Edition</h2>
+                        <p>Дизайн</p>
                         </div>
                     </li>
-                    <li class="list-bottom">
-                        <img class="photto" width="370" src="./images-portfolio/img-8.jpg" alt="Проект LAB">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Проект LAB</h2>
-                        <p class="title-portfolio">Маркетинг</p>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-8.jpg" alt="Проект LAB">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Проект LAB</h2>
+                        <p>Маркетинг</p>
                         </div>
                     </li>
-                    <li class="list-bottom">
-                        <img class="photto" width="370" src="./images-portfolio/img-9.jpg" alt="Growing Business">
-                        <div class="list-portfolio-container">
-                        <h2 class="list-portfolio">Growing Business</h2>
-                        <p class="title-portfolio">Приложение</p>
+                    <li class="flat-section__item">
+                        <img  width="370" src="./images-portfolio/img-9.jpg" alt="Growing Business">
+                        <div class="flat-item">
+                        <h2 class="flat-item__title">Growing Business</h2>
+                        <p>Приложение</p>
                       </div>
                     </li>
                 </ul>
@@ -131,60 +129,60 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="container">
             <div class="footer-container">
-                <div>
-            <a class="footer-logo" href="./index.html">Web<span class="footer-studio">Studio </span> 
+                <div class="footer-address">
+            <a class="footer-address__logo" href="./index.html">Web<span class="footer-address__studio">Studio </span> 
             </a>  
             <address >
-                <ul class="addres-list">
-                  <li class="addres-list-item"><a class="address" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
+                <ul class="footer-address__list">
+                  <li class="footer-address__item"><a class="footer-address__address" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
                       Леси Украинки, 26</a> </li>
-                  <li class="addres-list-item"><a class="footer-contact" href="mailto:info@devstudio.com">info@example.com</a> </li>
-                  <li class="addres-list-item"><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a> </li>
+                  <li class="footer-address__item"><a class="footer-address__link" href="mailto:info@devstudio.com">info@example.com</a> </li>
+                  <li class="footer-address__item"><a class="footer-address__link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
                 </ul>
               </address>
             </div>
               <div class="fotter-icon-container">
-                <h3 class="fotter-icon-title">ПРИСОЕДЕНЯЙТЕСЬ</h3>
-                <ul class="footer-icon-list">
+                <h3 class="fotter-icon-container__title">ПРИСОЕДЕНЯЙТЕСЬ</h3>
+                <ul class="fotter-icon-container__list">
                   <li>
-                        <a class="footer-link" href="">
-                          <svg class="footer-icon">
+                        <a class="fotter-icon-container__link" href="">
+                          <svg class="fotter-icon-container__icon">
                               <use href="./images/symbol-defs.svg#icon-instagram"> </use>
                           </svg>
                         </a>
                   </li>
                   <li>
-                        <a class="footer-link" href="">
-                          <svg class="footer-icon">
+                        <a class="fotter-icon-container__link" href="">
+                          <svg class="fotter-icon-container__icon">
                               <use href="./images/symbol-defs.svg#icon-twitter"> </use>
                           </svg>
                         </a>
                   </li>
                   <li>
-                        <a class="footer-link" href="">
-                          <svg class="footer-icon">
+                        <a class="fotter-icon-container__link" href="">
+                          <svg class="fotter-icon-container__icon">
                               <use href="./images/symbol-defs.svg#icon-facebook"> </use>
                           </svg>
                         </a>
                   </li>
                   <li>
-                        <a class="footer-link" href="">
-                          <svg class="footer-icon">
+                        <a class="fotter-icon-container__link" href="">
+                          <svg class="fotter-icon-container__icon">
                               <use href="./images/symbol-defs.svg#icon-linkedin"> </use>
                           </svg>
                         </a>
                   </li>
               </ul>
               </div>
-              <div class="telegram">
+              <div class="footer-form">
                 <form action="">
-                    <h3 class='fotter-icon-title'>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                    <h3 class='footer-form__title'>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
                     <input type="email" name="telegram" placeholder="E-mail">
-                    <button class="telegram-button">Подписаться
-                        <svg class="icon-tg">
+                    <button class="footer-form__button">Подписаться
+                        <svg class="footer-form__icon">
                             <use href="./images/symbol-defs.svg#tg"> </use>
                         </svg>
                     </button>

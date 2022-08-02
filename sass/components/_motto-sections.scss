@@ -1,0 +1,70 @@
+.motto-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .motto-section__list{
+    display: flex;
+  }
+  
+  .motto-section__item{
+    margin-right: 30px;
+    display: block;
+    &:nth-child(1)::before {
+      content: "";
+      display: block;
+      height: 120px;
+      background-image: url(../images/antenna\ 1sputnik.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F5F4FA;
+    }
+    &:nth-child(2)::before {
+      content: "";
+      display: block;
+      height: 120px;
+      background-image: url(../images/clock\ 1clok.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F5F4FA;
+    }
+    
+    &:nth-child(3)::before {
+      content: "";
+      display: block;
+      height: 120px;
+      background-image: url(../images/diagram\ 1computer.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F5F4FA;
+    }
+    
+    &:nth-child(4)::before {
+      content: "";
+      display: block;
+      height: 120px;
+      background-image: url(../images/astronaut\ 1kosmodesant.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F5F4FA;
+    }
+  }
+  
+  .motto-section__title{
+    margin-bottom: 10px;
+    font-family: "roboto";
+    font-weight: 700;
+    line-height: 1.14;
+    color: #212121;
+    font-size: 14px;
+    letter-spacing: 0.0262em;
+  }
+  
+  .motto-section__paragraph{
+    width: 270px;
+    height: 75px;
+    line-height: 1.71;
+    font-size: 14px;
+    letter-spacing: 0.0262em;
+  }
+  

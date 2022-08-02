@@ -1,0 +1,46 @@
+.fotter-icon-container {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+  
+  .fotter-icon-container__title{
+    font-family: "roboto";
+    font-weight: 700;
+    line-height: 1.14;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.0262em;
+  }
+  
+  .fotter-icon-container__list{
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .fotter-icon-container__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+      background-color: #2196F3;
+    }
+    &:focus{
+      background-color: #2196F3;
+    }
+  }
+  .fotter-icon-container__icon{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+  }
