@@ -73,6 +73,7 @@ width: 450px;
     padding-right: 28px;
     cursor: pointer;
     border: none;
+    transition: background-color var(--primary-transition);
     @media screen and (max-width: 1200px) {
         margin-left: auto;
         margin-right: auto;
@@ -82,7 +83,10 @@ width: 450px;
     &__icon {
         margin-left: 10px;
     }
-    
+    &:hover,
+    &:focus {
+        background-color: var(--accent-shadow-color);
+    }
 }
 .footer-label__input{
     color: #fff;
