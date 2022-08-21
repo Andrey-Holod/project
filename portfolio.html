@@ -1,199 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфоліо</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-            <a class="header__logo" href="./index.html">Web<span class="header__studio">Studio </span> 
-            </a>
-        <nav>
-        <div class="header__nav">   
-            <ul class="header__list-nav">
-                <li class="header__menu-item"><a class="header__link" href="./index.html">Студия</a> </li>
-                <li class="header__menu-item"><a class="header__link header__link--active" href="./portfolio.html">Портфолио</a> </li>
-                <li class="header__menu-item"><a class="header__link" href="">Контакты</a> </li>
-            </ul>
-        </div>
-       </nav>
-        <ul class="header__adress-list"> 
-            <li>
-                <a class="header__adress-link" href="mailto:info@devstudio.com">
-                    <svg class="adress-link__icon-mail">
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li><a class="header__adress-link" href="tel:+380961111111">
-                <svg class="adress-link__icon-phone">
-                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a></li>
+  <!--Верхня_лінія-->
+  <header class="header">
+    <div class="container header-container">
+      <nav class="nav">
+        <a href="" class="nav__logo">Web<span class="nav__span">Studio</span></a>
+        <button class="menu-button" type="button" aria-label="menu-open" data-menu-open>
+          <svg class="mobile-svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg></a>
+         </button>
+         <!-- Mobile menu -->
+         <div class="menu-overlay is-open" data-menu>
+  <div class="menu-container">
+    <nav class="mobile-nav">
+    <button class="menu-btn" type="button" aria-label="menu-close" data-menu-close>
+      <svg class="" width="40" height="40">
+<use class="menu-close-icon" href="./images/icons.svg#icon-close_40px"></use></svg>
+    </button>
+    <ul class="mobile-list">
+      <li class="mobile-list__item"><a class="mobile-list__link" href="./index.html">Студія</a></li>
+      <li class="mobile-list__item"><a class="mobile-list__link--current" href="./portfolio.html">Портфоліо</a></li>
+      <li class="mobile-list__item"><a class="mobile-list__link" href="">Контакти</a></li>
+    </ul>
+    </nav>
+    <ul class="mobile-contact">
+      <li class="mobile-contact__item">
+        <a class="mobile-contact__list mobile-contact-blue" href="tel:+380961111111">+38 096 111 11 11</a>
+      </li>
+      <li class="mobile-contact__item">
+        <a class="mobile-contact__list" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="mobile-social">
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="">Instagram</a>
+      </li>
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="">Twitter</a>
+      </li>
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="">Facebook</a>
+      </li>
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="">LinkedIn</a>
+      </li>
+    </ul>
+   </div> 
+   </div>
+   <!-- //// -->
+        <ul class="nav__item">
+          <li><a class="nav__link" href="./index.html">Студія</a></li>
+          <li><a class="nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="nav__link" href="">Контакти</a></li>
         </ul>
-          </div>
+      </nav>
+      <ul class="contacts">
+        <li>
+          <a class="contacts__contact" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="contacts__contact" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
     </div>
-    </header>
-   <main>     
-            <section class="section-portfolio">
-                <div class="container">
-                    <div class="portfolio-container">
-                <ul class="button-list">
-                    <li class="button-list__item"><button type="button" class="button-list__button">Все</button></li>
-                    <li class="button-list__item"><button type="button" class="button-list__button">Веб-сайты</button></li>
-                    <li class="button-list__item"><button type="button" class="button-list__button">Приложения</button></li>
-                    <li class="button-list__item"><button type="button" class="button-list__button">Дизайн</button></li>
-                    <li class="button-list__item"><button type="button" class="button-list__button">Маркетинг</button></li>
-                </ul>
-                <div class="flat-section">
-                <ul class="flat-section__list">
-                    <li class="flat-section__item">
-                        <div class="flat-container">
-                        <img  width="370" src="./images-portfolio/img.jpg" alt="Технокряк">
-                         <p class="flat-container__actions">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-                        </div>
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Технокряк</h2>
-                        <p>Веб-сайт</p>
-                        </div>
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-2.jpg" alt="Постер New Orlean vs Golden Star">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Постер New Orlean vs Golden Star</h2>
-                        <p>Дизайн</p>
-                        </div>
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-3.jpg" alt="Ресторан Seafood">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Ресторан Seafood</h2>
-                        <p>Приложение</p>
-                        </div>
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-4.jpg" alt="Проект Prime">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Проект Prime</h2>
-                        <p>Маркетинг</p>
-                        </div>
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-5.jpg" alt="Проект Boxes">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Проект Boxes</h2>
-                        <p>Приложение</p>
-                        </div>  
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-6.jpg" alt="Inspiration has no Borders">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Inspiration has no Borders</h2>
-                        <p>Веб-сайт</p>
-                        </div>
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-7.jpg" alt="Издание Limited Edition">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Издание Limited Edition</h2>
-                        <p>Дизайн</p>
-                        </div>
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-8.jpg" alt="Проект LAB">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Проект LAB</h2>
-                        <p>Маркетинг</p>
-                        </div>
-                    </li>
-                    <li class="flat-section__item">
-                        <img  width="370" src="./images-portfolio/img-9.jpg" alt="Growing Business">
-                        <div class="flat-item">
-                        <h2 class="flat-item__title">Growing Business</h2>
-                        <p>Приложение</p>
-                      </div>
-                    </li>
-                </ul>
+  </header>
+  <!--Герой-->
+  <main class="main">
+    <div class="container">
+      <section class="section-two">
+        <ul class="list">
+          <li class="section-two__button-two"> <button class="button-current base-btn" type="button">Усі</button></li>
+          <li class="section-two__button-two"> <button class="button base-btn" type="button">Веб-сайти</button></li>
+          <li class="section-two__button-two"> <button class="button base-btn" type="button">Додатки</button></li>
+          <li class="section-two__button-two"> <button class="button base-btn" type="button">Дизайн</button></li>
+          <li class="section-two__button-two"> <button class="button base-btn" type="button">Маркетинг</button></li>
+        </ul>
+        <h1 class="visualy-hidden">Портфоліо бізнес послуг</h1>
+        <ul class="list-icon">
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <div class="product-img"><img class="real-work__img"
+                srcset="
+                      ./images/portfolio/w/img-portfolio-1-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-1-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-1-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-1-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-1-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-1-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-1-370.jpg"
+                    width="450"
+                    height="260"
+                alt="Веб-сайт"/>
+                <div class="overlay">
+                  <p class="overlay__action">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-            <div class="footer-container">
-                <div class="footer-address">
-            <a class="footer-address__logo" href="./index.html">Web<span class="footer-address__studio">Studio </span> 
-            </a>  
-            <address >
-                <ul class="footer-address__list">
-                  <li class="footer-address__item"><a class="footer-address__address" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
-                      Леси Украинки, 26</a> </li>
-                  <li class="footer-address__item"><a class="footer-address__link" href="mailto:info@devstudio.com">info@example.com</a> </li>
-                  <li class="footer-address__item"><a class="footer-address__link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
-                </ul>
-              </address>
-            </div>
-              <div class="fotter-icon-container">
-                <h3 class="fotter-icon-container__title">ПРИСОЕДЕНЯЙТЕСЬ</h3>
-                <ul class="fotter-icon-container__list">
-                  <li>
-                        <a class="fotter-icon-container__link" href="">
-                          <svg class="fotter-icon-container__icon">
-                              <use href="./images/symbol-defs.svg#icon-instagram"> </use>
-                          </svg>
-                        </a>
-                  </li>
-                  <li>
-                        <a class="fotter-icon-container__link" href="">
-                          <svg class="fotter-icon-container__icon">
-                              <use href="./images/symbol-defs.svg#icon-twitter"> </use>
-                          </svg>
-                        </a>
-                  </li>
-                  <li>
-                        <a class="fotter-icon-container__link" href="">
-                          <svg class="fotter-icon-container__icon">
-                              <use href="./images/symbol-defs.svg#icon-facebook"> </use>
-                          </svg>
-                        </a>
-                  </li>
-                  <li>
-                        <a class="fotter-icon-container__link" href="">
-                          <svg class="fotter-icon-container__icon">
-                              <use href="./images/symbol-defs.svg#icon-linkedin"> </use>
-                          </svg>
-                        </a>
-                  </li>
-              </ul>
               </div>
-              <div class="footer-form">
-                <form action="">
-                    <h3 class='footer-form__title'>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                    <input type="email" name="telegram" placeholder="E-mail">
-                    <button class="footer-form__button">Подписаться
-                        <svg class="footer-form__icon">
-                            <use href="./images/symbol-defs.svg#tg"> </use>
-                        </svg>
-                    </button>
-                </form>
-        
-            </div>
-            </div>
-        
-        
-                </div>
-            </div>
-           </footer>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title">Технокряк</h2>
+                <p class="product-wrapper__title-product">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <img class="real-work__img"
+              srcset="
+                      ./images/portfolio/w/img-portfolio-2-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-2-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-2-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-2-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-2-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-2-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-2-370.jpg"
+                    width="450"
+                    height="260"
+                alt="Постер NBA"/>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title">Постер<span lang="en"> New Orlean vs Golden Star</span></h2>
+                <p class="product-wrapper__title-product">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <img class="real-work__img"
+              srcset="
+                      ./images/portfolio/w/img-portfolio-3-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-3-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-3-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-3-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-3-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-3-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-3-370.jpg"
+                    width="450"
+                    height="260"
+               alt="логотип Seafood"/>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title">Ресторан<span lang="en">Seafood</span></h2>
+                <p class="product-wrapper__title-product">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <img class="real-work__img"
+              srcset="
+                      ./images/portfolio/w/img-portfolio-4-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-4-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-4-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-4-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-4-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-4-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-4-370.jpg"
+                    width="450"
+                    height="260"
+               alt="Наушники"/>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title">Проект<span lang="en">Prime</span></h2>
+                <p class="product-wrapper__title-product">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <img class="real-work__img"
+              srcset="
+                      ./images/portfolio/w/img-portfolio-5-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-5-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-5-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-5-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-5-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-5-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-5-370.jpg"
+                    width="450"
+                    height="260"
+               alt="Коробка"/>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title">Проект<span lang="en">Boxes</span></h2>
+                <p class="product-wrapper__title-product">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <img class="real-work__img"
+              srcset="
+                      ./images/portfolio/w/img-portfolio-6-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-6-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-6-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-6-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-6-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-6-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-6-370.jpg"
+                    width="450"
+                    height="260"
+               alt="Веб-сайт"/>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title" lang="en">Inspiration has no Borders</h2>
+                <p class="product-wrapper__title-product">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <img class="real-work__img"
+              srcset="
+                      ./images/portfolio/w/img-portfolio-7-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-7-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-7-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-7-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-7-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-7-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-7-370.jpg"
+                    width="450"
+                    height="260"
+               alt="Книга"/>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title">Издание<span lang="en">Limited Edition</span></h2>
+                <p class="product-wrapper__title-product">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+              <img class="real-work__img"
+              srcset="
+                      ./images/portfolio/w/img-portfolio-8-354.jpg 354w,
+                      ./images/portfolio/w/img-portfolio-8-370.jpg 370w,
+                      ./images/portfolio/w/img-portfolio-8-450.jpg 450w,
+                      ./images/portfolio/w/img-portfolio-8-708.jpg 708w,
+                      ./images/portfolio/w/img-portfolio-8-740.jpg 740w,
+                      ./images/portfolio/w/img-portfolio-8-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+                    src="./images/portfolio/w/img-portfolio-8-370.jpg"
+                    width="450"
+                    height="260"
+               alt="Купон Lab el tag"/>
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title">Проект<span lang="en">LAB</span></h2>
+                <p class="product-wrapper__title-product">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li><a class="real-work" href="" target="_blank" rel="noopener noreferrer">
+            <img class="real-work__img"
+            srcset="
+            ./images/portfolio/w/img-portfolio-9-354.jpg 354w,
+            ./images/portfolio/w/img-portfolio-9-370.jpg 370w,
+            ./images/portfolio/w/img-portfolio-9-450.jpg 450w,
+            ./images/portfolio/w/img-portfolio-9-708.jpg 708w,
+            ./images/portfolio/w/img-portfolio-9-740.jpg 740w,
+            ./images/portfolio/w/img-portfolio-9-900.jpg 900w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw,"
+          src="./images/portfolio/w/img-portfolio-9-370.jpg"
+          width="450"
+          height="260"
+                alt="Ноутбук" />
+              <div class="product-wrapper">
+                <h2 class="product-wrapper__title title" lang="en">Growing Business</h2>
+                <p class="product-wrapper__title-product">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <!--Підвал-->
+  <footer class="footer">
+    <div class="container footer-contact">
+      <div class="footer-one">
+        <a href="" class="footer__logo-footer">Web<span class="footer__span-footer">Studio</span></a>
+        <address class="address">
+          <ul class="contact-footer">
+            <li class="">
+              <a class="contact-footer__link-map" href="https://goo.gl/maps/sx9XBkgbLeAh2KCX8" target="_blank"
+                rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="">
+              <a class="contact-footer__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="">
+              <a class="contact-footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-two">
+        <h4 class="footer-two__social-links">приєднуйтесь</h4>
+        <ul class="social-footer">
+          <li><a class="social-footer__link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="instagram">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></a></li>
+          <li><a class="social-footer__link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="instagram">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg></a></li>
+          <li><a class="social-footer__link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="instagram">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg></a></li>
+          <li><a class="social-footer__link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="instagram">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+      <!-- Footer form -->
+      <form class="footer-three">
+        <h4 class="footer-three_text">Підпишіться на розсилку</h4>
+        <span class="footer-wrp">
+          <label class="footer-label">
+            <input class="footer-label__input" type="email" placeholder="E-mail">
+          </label>
+          <button class="footer-btn" type="submit">
+            Підписатися
+            <svg class="footer-btn__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </span>
+      </form>
+    </div>
+  </footer>
+  <script src="./js/menu.js" ></script>
 </body>
+
 </html>
