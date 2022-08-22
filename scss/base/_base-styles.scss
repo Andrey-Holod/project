@@ -1,0 +1,59 @@
+/**
+|============================
+| block 2
+|============================
+*/
+
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  font-size: 28px;
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+   padding-top: 60px;
+   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &:nth-child(3) {
+    padding-top: 0;
+  }
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
